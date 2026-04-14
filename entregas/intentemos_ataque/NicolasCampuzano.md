@@ -44,29 +44,52 @@ En que fase del Cyber Kill Chain se encuentra la explotación?
 - ¿Qué tácticas y técnicas de _MITRE ATT&CK_ estarían involucradas? (Si
     el CVE ya tiene mapeo público en ATT&CK, mejor; si no, busquen técnicas
     que apliquen)
+  
 Initial access
+
 
 T1190- Exploit Public facing application
 El adversario puede explotar una vulnerabilidad en un servidor en el internet. Esta debilidad se puede deber a un bug, un glitch temporal o un error de configuración.
+
+
 M1026-Privileged Account Management - Usar el mínimo de privilegio para las cuentas que corren los procesos minimizan la cantidad de información vulnerada.
 
+
 Discovery
+
+
 T1083 — File and Directory Discovery - Un adversario puede enumerar la información en el servidor
+
+
 Mitigaciones - Este tipo de técnica no se puede mitigar fácilmente debido a que se fundamenta en el abuso de funciones del sistema.
 
+
 Collection
+
+
 T1005 — Data from Local System - Un adversario puede leer datos del servidor
+
+
 M1057 - Data Loss Prevention - La prevención de perdida de datos puede restringir el acceso a datos sensibles y detectar los datos sensibles que se encuentran sin cifrar.
 
 
 T1059 — Command and Scripting Interpreter - Un adversario puede abusar interpretes de scripts para ejecutar comandos arbitrarios.
+
+
 M1045 	Code Signing - Cuando sea posible, solo permitir la ejecución de scripts firmados.
 
+
 Exfiltration
+
+
 T1567 -Exfiltration over web-service - Un adversario puede utilizar un servicio legitimo para exfiltrar datos, evadiendo los canales legítimos.
 
 Impact
+
+
 T1491-defacement - Un adversario puede alterar el contenido de un servidor.
+
+
 M1053 	Data Backup - Tener respaldos es una forma de reparar una catástrofe en el caso de tener problemas de seguridad.
 
 ### 3. Configuración del entorno de pruebas
