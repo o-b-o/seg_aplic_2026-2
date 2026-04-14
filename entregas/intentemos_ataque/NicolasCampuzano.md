@@ -154,7 +154,7 @@ Cerramos el contenedor (superficie de ataque)
 
 ## gamma. Análisis de mitigaciones.
 Este ataque puede tener éxito porque el saneamiento de entradas de Apache fallo en esta versión. Una forma de prevenir esto seria tener un saneamiento de entradas redundante (como un Web Application Firewall (WAF) bien configurado que detectaría el url malicioso y lo bloquearía antes de que llegara al servidor Apache).
-Se intento parchar esta vulnerabilidad bloqueando la cadena ".2%e" pero los desarrolladores no previeron que el atacante podía usar doble codificación "%%32%65" para evitar el parche, teniendo como consecuencia el CVE-2021-42013, que finalmente se arregló reescribiendo ap_normalize_path para verificar todo el URL antes de validarlo.
+Se intento parchar esta vulnerabilidad bloqueando la cadena ".%2e" pero los desarrolladores no previeron que el atacante podía usar doble codificación "%%32%65" para evitar el parche, teniendo como consecuencia el CVE-2021-42013, que finalmente se arregló reescribiendo ap_normalize_path para verificar todo el URL antes de validarlo.
 Otra forma de prevenirlo es tener un control de acceso bien configurado (principio de menor privilegio).
 Un mecanismo que evita que este ataque llegue a la ejecución de código arbitrario es limitar el uso de scripts en un servidor, ya sea por completo o solo permitir la ejecución de scripts firmados.
 
