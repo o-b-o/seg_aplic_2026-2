@@ -1,5 +1,5 @@
 # Intereses
-Hola soy Nicolás Campuzano, soy una persona normal.
+Hola soy uwu, soy una persona normal.
 Llevo mas de 10 años siendo hacker (no cracker), hackeando linux, recetas de cocina, técnicas de arte, comunidades etc...
 Llevo demasiado tiempo siendo white-hat, pero recuerdo el dicho "peace without the capacity to enforce it is just submission" y me doy cuenta de que me falta mucho en el campo de ataque (y por ende defensa).
 Quiero aprender a romper sistemas, quiero aprender a brincar bardas, no porque quiera irme al lado obscuro, pero porque son habilidades utiles y relevantes en el mundo actual.
